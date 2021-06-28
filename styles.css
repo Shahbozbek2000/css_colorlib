@@ -1,0 +1,124 @@
+:root {
+    --download_btn: #F1D204;
+    --btn_hover: #6a4d8a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url('https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/front-page-header.jpg');
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navbar {
+    height: 80px;
+}
+.container {
+    padding-top: 20px;
+    width: 85%;
+    /* height: 80px; */
+    /* border: 1px solid white; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 155px; }
+
+.navbar-item {
+    display: flex;
+}
+.navbar-item li {
+    margin: 0 15px;
+    list-style-type: none;
+
+}
+li a {
+    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+li a:hover {
+    color: var(--download_btn);
+}
+.main-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid white; */
+ }
+.main-wrap-title {
+    color: white;
+}
+.main-wrap-title h1 span{
+    color: var(--download_btn);
+}
+.main-wrap-title h1 {
+    font-size:80px;
+    font-family: 'Poppins', sans-serif;
+}
+.main-wrap-title p {
+    width: 75%;
+    margin: auto;
+    line-height: 26px;
+    font-weight: lighter !important;
+}
+.main-wrap-btns {
+    margin-top: 40px;
+}
+.main-wrap-btns button {
+    width: 242px;
+    height: 63px;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; }
+
+.main-wrap-btns .learn-more {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 3px;
+}
+.main-wrap-btns .download {
+    margin: 0 15px;
+    background-color: var(--download_btn);
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+.main-wrap-btns .download:hover {
+    background-color: var(--btn_hover);
+}
+
+
+/* media query => responsive */
+
+@media only screen and (max-width: 868px) {
+    .main-wrap-title h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-wrap-btns .download {
+        margin-top: 20px;
+    }
+}
